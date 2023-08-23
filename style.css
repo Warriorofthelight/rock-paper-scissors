@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+/* stack images */
+.images {
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  bottom: 2rem;
+  right: 0.5rem;
+}
+
+/* Side 2 stack images */
+.side-2 {
+  position: relative;
+}
+
+.imageO {
+  position: absolute;
+  bottom: 3.2rem;
+  left: 0.5rem;
+}
+
+.rockO {
+  z-index: 1;
+}
+
+body {
+  background-color: rgb(236, 154, 14);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: white;
+}
+
+.title {
+  text-align: center;
+}
+
+.center {
+  background-color: rgb(253, 194, 92);
+  border: 3px solid red;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  border: 3px solid red;
+  width: 500px;
+  height: 250px;
+  justify-content: start;
+  align-items: end;
+}
+
+.side-1 {
+  border: 3px solid red;
+  width: 150px;
+}
+
+.side-2 {
+  border: 3px solid red;
+}
+
+.vs {
+  margin: 0 3rem;
+}
+
+.btn {
+  margin-top: 4rem;
+}
+
+.start {
+  background-color: green;
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  text-transform: uppercase;
+  color: white;
+  border-bottom: 5px solid rgb(1, 75, 1);
+}
+
+.start:hover {
+  background: rgb(3, 97, 3);
+  border: none;
+}
+
+.btnn {
+  padding: 0.1rem;
+  border: none;
+  margin-right: 0.4rem;
+}

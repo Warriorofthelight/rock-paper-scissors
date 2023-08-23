@@ -32,10 +32,6 @@ img {
   left: 0.5rem;
 }
 
-.rockO {
-  z-index: 1;
-}
-
 body {
   background-color: rgb(236, 154, 14);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;

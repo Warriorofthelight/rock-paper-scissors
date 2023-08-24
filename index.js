@@ -45,4 +45,34 @@ scissorsb.addEventListener("click", function () {
 
 // 2.They start and the opponent shuffles through 1-3 and choses a random number
 
+// Random value generation
+start.addEventListener("click", function () {
+  let side2r = [scissorsO, rockO, paperO];
+  let randomIndex = Math.floor(Math.random() * side2r.length);
+  let value = side2r[randomIndex];
+
+  //   Show correct image
+  if (randomIndex == 0) {
+    scissorsO.style.zIndex = "1";
+    paperO.style.zIndex = "0";
+    rockO.style.zIndex = "0";
+  } else if (randomIndex == 1) {
+    rockO.style.zIndex = "1";
+    paperO.style.zIndex = "0";
+    scissorsO.style.zIndex = "0";
+  } else if (randomIndex == 2) {
+    paperO.style.zIndex = "1";
+    rockO.style.zIndex = "0";
+    scissorsO.style.zIndex = "0";
+  }
+
+  //   see who won
+  if (rock == 0) {
+    console.log("you win");
+  } else if (rock == 1) {
+    console.log("It's a draw");
+  } else if (rock == 2) {
+    console.log("you lose");
+  }
+});
 // 3.A message stating wheter they lost or won is shown

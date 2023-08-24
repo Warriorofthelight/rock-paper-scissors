@@ -26,18 +26,21 @@ let scissorsO = document.getElementById("scissorsO");
 // Choose weapon
 
 rockb.addEventListener("click", function () {
-  let rock = document.getElementById("rock");
   rock.style.zIndex = "1";
+  paper.style.zIndex = "0";
+  scissors.style.zIndex = "0";
 });
 
 paperb.addEventListener("click", function () {
-  let paper = document.getElementById("paper");
   paper.style.zIndex = "1";
+  rock.style.zIndex = "0";
+  scissors.style.zIndex = "0";
 });
 
 scissorsb.addEventListener("click", function () {
-  let scissors = document.getElementById("scissors");
   scissors.style.zIndex = "1";
+  paper.style.zIndex = "0";
+  rock.style.zIndex = "0";
 });
 
 // 2.They start and the opponent shuffles through 1-3 and choses a random number

@@ -10,6 +10,20 @@ img {
   object-fit: cover;
   border-radius: 25px;
 }
+
+.result {
+  position: relative;
+}
+
+.resultr {
+  text-transform: uppercase;
+  width: 500px;
+  font-size: 3rem;
+  position: absolute;
+  bottom: 10rem;
+  left: 0.5rem;
+}
+
 /* stack images */
 .images {
   position: relative;
@@ -19,6 +33,10 @@ img {
   position: absolute;
   bottom: 2rem;
   right: 0.5rem;
+}
+
+.scissors {
+  z-index: -1;
 }
 
 /* Side 2 stack images */
@@ -44,7 +62,6 @@ body {
 
 .center {
   background-color: rgb(253, 194, 92);
-  border: 3px solid red;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -54,7 +71,6 @@ body {
 
 .card {
   display: flex;
-  border: 3px solid red;
   width: 500px;
   height: 250px;
   justify-content: start;
@@ -62,12 +78,10 @@ body {
 }
 
 .side-1 {
-  border: 3px solid red;
   width: 150px;
 }
 
 .side-2 {
-  border: 3px solid red;
 }
 
 .vs {
